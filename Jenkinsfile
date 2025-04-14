@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+    stages{
+        stage('clone code'){
+            steps{
+                checkout scm
+            }
+        }
+    }
